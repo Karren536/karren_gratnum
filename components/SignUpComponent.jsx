@@ -1,7 +1,6 @@
 import axios from "axios";
 import { use, useState } from "react";
 import { Link } from "react-router-dom";
-import NavbarComponent from "./NavbarComponent";
 
 const SignUpComponent =()=> {
 
@@ -45,7 +44,6 @@ const SignUpComponent =()=> {
 
     return (
         <div className="row justify-content-center mt-4">
-            <NavbarComponent/>
             <div className="col-md-6 card shadow p-4">
                 <h2>Create Account</h2>
                 <h5 className="text-warning">{loading}</h5>

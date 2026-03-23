@@ -57,7 +57,6 @@ const AddProductComponent =()=> {
                             <option value="TVs">televisions</option>
                             <option value="laptops">laptops</option>
                             <option value="accessories ">Accessories</option>
-                            <option value="Camera&lenses">C&L</option>
                         </select>
                         <input type="number"
                             placeholder="Enter Product Cost"
