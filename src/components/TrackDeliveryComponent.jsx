@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+import NavbarComponent from "./NavbarComponent";
 
 const TrackDeliveryComponent = () => {
   const [address, setAddress] = useState("");
@@ -33,7 +34,7 @@ const TrackDeliveryComponent = () => {
 
   return (
     <div className="row justify-content mt-3">
-      <h2>Track Delivery</h2>
+      <NavbarComponent/>
       <h5 className="text-warning">{loading}</h5>
       <h5 className="text-danger mt-2">{error}</h5>
       <h5 className="text-success mt-2">{status}</h5>
