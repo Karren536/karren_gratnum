@@ -1,12 +1,16 @@
 import axios from "axios";
 import { useState } from "react"
 import { useLocation } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 const MakePaymentComponent =()=> {
     let [error, setError] = useState('')
     let [loading, setLoading] = useState('')
     let [phone, setPhone] = useState('')
     let [success, setSuccess] = useState('')
     let [amount, setAmount] = useState('')
+    
+
+    let navigator = useNavigate()
 
     const img_url = "https://karren.alwaysdata.net/static/images/"
 
@@ -56,8 +60,19 @@ const MakePaymentComponent =()=> {
                     value={phone} 
                     onChange={(e)=>{setPhone(e.target.value)}} 
                 />
-                <button className="btn btn-dark mt-3">Pay Now</button>
             </form>
+            <br /><br />
+            <button className="btn btn-dark" onClick={handleSubmit}>Pay Now</button>
+            <br /><br />
+
+            <button
+                  className="btn btn-dark"
+                  onClick={() => {
+                    navigator("/trackdelivery", { state: { product } });
+                  }}
+                >
+                  Track Delivery
+                </button>
             
         </div>
         </div>

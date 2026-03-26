@@ -89,10 +89,10 @@ const AddProductComponent = () => {
                         className="form-select"
                     >
                         <option value="">Select category</option>
-                        <option value="televisions">TVs</option>
-                        <option value="phones">Phones</option>
-                        <option value="laptops">Laptops</option>
+                        <option value="cameras">cameras</option>
+                        <option value="lenses">lenses</option>
                         <option value="accessories">Accessories</option>
+                        <option value="sdcards">SDcards</option>
                     </select>
                     <br />
 

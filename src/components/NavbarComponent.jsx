@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import gratnumlogo from "../gratnumlogo.jpg";
 const NavbarComponent =()=> {
         const user = JSON.parse(localStorage.getItem("user"))
         const logout = () => {
@@ -8,7 +8,7 @@ const NavbarComponent =()=> {
         }
     return (
         <nav className="navbar navbar-expand-lg">
-            <Link className="navbar-brand" to="/">Sokogarden</Link>
+            <Link className="navbar-brand" to="/"><img src={gratnumlogo} alt="Logo" /></Link>
             <button className="navbar-toggler"data-bs-collapse="collapse" data-bs-target="#navbarCollapse">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -18,7 +18,6 @@ const NavbarComponent =()=> {
                     <Link className="nav-link" to="/">Home</Link>
                     <Link className="nav-link" to='/search'>Search</Link>
                     <Link className="nav-link" to='/addproduct'>Add Product</Link>
-                    <Link className="nav-link" to='/trackdelivery'>Track Delivery</Link>
                 </div>
 
                
