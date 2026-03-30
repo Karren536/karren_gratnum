@@ -1,8 +1,9 @@
 const FooterComponent = () => {
   return (
-    <footer className="bg-info text-white py-4">
-      <div className="container text-center">
-        <p>&copy; 2024 gratnum. All rights reserved.</p>
+
+    <footer className="bg-secondary text-white py-4">
+      <div className="container-fluid text-center">
+        <p>&copy; 2026 gratnum. All rights reserved.</p>
         <p>Contact us on the following platforms:</p>
         <div className="social-icons">
           <a

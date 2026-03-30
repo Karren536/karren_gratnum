@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import NavbarComponent from "./NavbarComponent";
+import FooterComponent from "./FooterComponent";
 
 const SignInComponent = () => {
     let [email, updateEmail] = useState('');
@@ -75,6 +76,7 @@ const SignInComponent = () => {
 
                 </form>
             </div>
+            <FooterComponent />
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import NavbarComponent from "./NavbarComponent";
+import FooterComponent from "./FooterComponent";
 
 const TrackDeliveryComponent = () => {
   const [address, setAddress] = useState("");
@@ -71,6 +72,7 @@ const TrackDeliveryComponent = () => {
         </form>
 
       </div>
+      <FooterComponent />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import axios from "axios";
 import { use, useState } from "react";
 import { Link } from "react-router-dom";
 import NavbarComponent from "./NavbarComponent";
+import FooterComponent from "./FooterComponent";
 
 const SignUpComponent =()=> {
 
@@ -92,6 +93,7 @@ const SignUpComponent =()=> {
                         <Link to="/login">Already has an account?Sign in</Link>
                 </form>
             </div>
+            <FooterComponent />
         </div>
     )
 }

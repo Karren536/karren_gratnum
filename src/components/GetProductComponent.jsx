@@ -3,6 +3,7 @@ import NavbarComponent from "./NavbarComponent";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 // import 'bootstrap-icons/font/bootstrap-icons.css';
+import FooterComponent from "./FooterComponent"
 
 const GetProductsComponent = () => {
   let [products, setProducts] = useState([]);
@@ -254,6 +255,7 @@ const GetProductsComponent = () => {
           </div>
         ))}
     </div>
+    <FooterComponent />
   </div>
   );
 };

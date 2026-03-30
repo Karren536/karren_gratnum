@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NavbarComponent from "./NavbarComponent";
 import axios from "axios";
+import FooterComponent from "./FooterComponent";
 
 const AddProductComponent = () => {
     let [product_name, setProductName] = useState("");
@@ -122,6 +123,7 @@ const AddProductComponent = () => {
                     <button className="btn btn-dark">Add product</button>
                 </form>
             </div>
+            <FooterComponent />
         </div>
     );
 };
